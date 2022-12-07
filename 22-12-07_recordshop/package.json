@@ -15,5 +15,7 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
-  }
+  },
+  "description": "Ihr sollt eine API für einen Plattenladen bauen. Macht dafür folgende Aufgaben:",
+  "main": "main.js"
 }
