@@ -1,21 +1,22 @@
 {
-  "name": "record-shop",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "nodemon main.js",
-    "start": "node main.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.2",
-    "lowdb": "^5.0.5"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.20"
-  },
-  "description": "Ihr sollt eine API für einen Plattenladen bauen. Macht dafür folgende Aufgaben:",
-  "main": "main.js"
+    "name": "record-shop",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "nodemon main.js",
+        "start": "node main.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.18.2",
+        "lowdb": "^5.0.5"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.20"
+    },
+    "description": "Ihr sollt eine API für einen Plattenladen bauen. Macht dafür folgende Aufgaben:",
+    "main": "main.js",
+    "type": "module"
 }

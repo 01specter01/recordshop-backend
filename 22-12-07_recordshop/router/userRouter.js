@@ -1,13 +1,12 @@
-import express from "express"
-import * as controller from "../controller/albumController.js"
+import express from "express";
 
-const router = express.Router()
+import * as controller from "../controller/userController.js";
 
-router
-    .get("/", controller.getAllAlbums)
-    .get("/:id", controller.getAlbum)
-    .put("/:id", controller.editAlbum)
-    .delete("/:id", controller.deleteAlbum)
-    .post("/", controller.saveAlbum)
+const router = express.Router();
 
-export default router
+router.get("/", controller.getAllUser).get("/:id", controller.getUser);
+// .put("/:id", controller.editUser)
+// .delete("/:id", controller.deleteUser)
+// .post("/", controller.saveUser);
+
+export default router;
