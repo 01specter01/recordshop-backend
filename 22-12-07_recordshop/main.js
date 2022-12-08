@@ -4,7 +4,6 @@ import cors from "cors";
 import albumRouter from "./routes/albumRouter.js";
 import photoRouter from "./routes/photoRouter.js";
 
-// import userRouter from "./router/userRouter.js";
 const server = express();
 
 const port = 1234;

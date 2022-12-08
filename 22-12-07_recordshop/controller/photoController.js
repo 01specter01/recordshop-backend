@@ -3,7 +3,7 @@ import { JSONFile } from "lowdb/node";
 
 const db = new Low(new JSONFile("data/db.json"));
 
-export const getAllPhoto = async (req, res) => {
+export const getAllPhotos = async (req, res) => {
     await db.read();
     res.json(db.data.photos);
 };
