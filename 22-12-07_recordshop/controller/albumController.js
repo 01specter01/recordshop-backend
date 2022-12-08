@@ -5,7 +5,7 @@ const db = new Low(new JSONFile("db/data.json"));
 
 export const getAllAlbums = async (req, res) => {
     await db.read();
-    res.json(db.data.albums);
+    res.json(db.data.album);
 };
 
 export const getAlbum = async (req, res) => {

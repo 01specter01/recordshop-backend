@@ -1,8 +1,8 @@
 import express from "express";
 import cors from "cors";
 
-import albumRouter from "./routes/albumRouter.js";
-import photoRouter from "./routes/photoRouter.js";
+import albumRouter from "./router/albumRouter.js";
+import photoRouter from "./router/photoRouter.js";
 
 const server = express();
 
