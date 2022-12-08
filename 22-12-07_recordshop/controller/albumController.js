@@ -1,16 +1,20 @@
 import { Low } from "lowdb";
 import { JSONFile } from "lowdb/node";
 
-const db = new Low(new JSONFile("db/data.json"));
+const db = new Low(new JSONFile("data/db.json"));
 
 export const getAllAlbums = async (req, res) => {
     await db.read();
-    res.json(db.data.album);
+    res.json(db.data.albums);
 };
 
 export const getAlbum = async (req, res) => {
     await db.read();
     const value = db.data.albums.find((a) => a.id === +req.params.id);
+    if (!value) {
+        res.status(404).send("Not found");
+        return;
+    }
     res.json(value);
 };
 
